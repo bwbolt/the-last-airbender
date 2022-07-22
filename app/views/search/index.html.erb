@@ -1,8 +1,8 @@
 <h3>Total Number of Residents:
-  <%= @members.count %></h3>
+  <%= @all_members.count %></h3>
 <hr>
 
-<% @members.first(25).each do |member| %>
+<% @members.each do |member| %>
   <h2><%= member.name %></h2>
   <% if member.photo %>
     <%= image_tag(member.photo, :alt => member.name) %>
