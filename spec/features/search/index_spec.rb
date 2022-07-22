@@ -10,8 +10,8 @@ RSpec.describe '#index' do
 
     expect(page).to have_content('Total Number of Residents: 97')
 
-    expect(page).to have_content('Allies:', count: 25)
-    expect(page).to have_content('Enemies:', count: 25)
-    expect(page).to have_content('Affiliations:', count: 25)
+    expect(page).to have_content('Allies:', maximum: 25)
+    expect(page).to have_content('Enemies:', maximum: 25)
+    expect(page).to have_content('Affiliations:', maximum: 25)
   end
 end
