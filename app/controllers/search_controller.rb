@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    # code
+    @members = AirbenderFacade.create_members(params[:nation])
   end
 end

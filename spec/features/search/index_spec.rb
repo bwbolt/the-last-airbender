@@ -8,6 +8,6 @@ RSpec.describe '#index' do
 
     expect(current_path).to eq(search_path)
 
-    expect(page).to have_content('Total Number of Fire Nation Residents:')
+    expect(page).to have_content('Total Number of Residents:')
   end
 end
