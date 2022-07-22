@@ -8,6 +8,10 @@ RSpec.describe '#index' do
 
     expect(current_path).to eq(search_path)
 
-    expect(page).to have_content('Total Number of Residents:')
+    expect(page).to have_content('Total Number of Residents: 97')
+
+    expect(page).to have_content('Allies:', count: 25)
+    expect(page).to have_content('Enemies:', count: 25)
+    expect(page).to have_content('Affiliations:', count: 25)
   end
 end
