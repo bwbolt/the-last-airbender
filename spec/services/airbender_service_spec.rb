@@ -14,4 +14,11 @@ RSpec.describe 'AirbenderService' do
     expect(member[:allies]).to be_a Array
     expect(member[:enemies]).to be_a Array
   end
+
+  it 'returns empty array if not applicable' do
+    parsed_json = AirbenderService.get_members('cow')
+
+    expect(parsed_json).to be_a Array
+    expect(parsed_json).to eq([])
+  end
 end
